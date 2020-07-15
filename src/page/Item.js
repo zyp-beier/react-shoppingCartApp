@@ -2,9 +2,9 @@ import React,{Component} from "react";
 import {Button, Card, Row} from "antd";
 
  class Picframe extends Component{
-    // handleClick() {
-    //     this.props.addToCart(this.props.index)
-    // }
+    handleClick() {
+        this.props.addToCart(this.props.index)
+    }
     render() {
         const {
             name,

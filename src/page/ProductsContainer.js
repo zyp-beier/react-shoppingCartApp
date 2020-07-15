@@ -9,7 +9,7 @@ export default function ProductsContainer (props){
         products,
         qty,
         addCart
-    } = props
+    } = props;
     const goodsList = arrayChunk(products,3)
     //渲染商品列表
     if(products.length !== 0){
@@ -39,12 +39,11 @@ export default function ProductsContainer (props){
     }
     return (
         <div>
-            {/*<Row>*/}
-            {/*    <Card style={{marginTop:10,width:920}}>*/}
-            {/*        抱歉，没有找到商品*/}
-            {/*    </Card>*/}
-            {/*</Row>*/}
-            147258
+            <Row>
+                <Card style={{marginTop:10,width:920}}>
+                    抱歉，没有找到商品
+                </Card>
+            </Row>
         </div>
     );
 }
